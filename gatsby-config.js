@@ -19,5 +19,12 @@ module.exports = {
         }
       }
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `gnotes`,
+        path: `${__dirname}/src/data/posts/`,
+      },
+    },
   ],
 }

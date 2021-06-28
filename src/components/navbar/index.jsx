@@ -9,6 +9,7 @@ export default function NavBar() {
       <Link to="/">Go home!</Link>
       <Link to="/contact">Contact Me</Link>
       <Link to="/about">About Me</Link>
+      <Link to="/my-posts">Blog</Link>
     </nav>
   )
 }
