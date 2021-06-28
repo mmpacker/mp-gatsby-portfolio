@@ -6,7 +6,9 @@
 
 module.exports = {
   siteMetadata: {
-    title: `A website on the internet`,
+    title: `Matt Packer's Portfolio`,
+    author: `Matt Packer`,
+    description: `Matt Packer's developer portfolio website. Built with React, Gatsby, and GraphQL.`
   },
   plugins: [
     {
