@@ -5,7 +5,9 @@
  */
 
 module.exports = {
-  /* Your site config here */
+  siteMetadata: {
+    title: `A website on the internet`,
+  },
   plugins: [
     {
       resolve: 'gatsby-plugin-web-font-loader',

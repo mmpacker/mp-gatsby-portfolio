@@ -1,13 +1,23 @@
 import React from "react"
 import Header from '../components/header'
 import Layout from '../components/layout'
-import { Link } from 'gatsby'
+import { graphql } from 'gatsby'
 
-export default function Home() {
+export default function Home({ data }) {
   return (
     <Layout>
-      <Header headerText="Well hello there!"/>
+      <Header headerText={data.site.siteMetadata.title}/>
       Hello, friend.
     </Layout>
   )
 }
+
+export const query = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+  }
+`
